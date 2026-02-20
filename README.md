@@ -17,6 +17,7 @@ driver = webdriver.Ie()         # Internet Explorer
 ```
 
 ### Web Driver Methods
+---
 
 - close
 - get
@@ -34,19 +35,33 @@ driver.quit()                   # quit browser
 ```
 
 ### X-Path
+---
 
-XPath Priority Ladder 2025
-1. //*[@data-testid='login-button']
-2. //button[@id='submit' or @name='submit']
-3. //button[text()='Sign in']
-4. //button[contains(text(),'Sign')]
-5. //button[contains(@class,'btn-primary')]
-6. //div[contains(@class,'modal')]//button[1]
-7. //label[text()='Email']/following-sibling::input
-8. //tr[td='John']//button[contains(text(),'Edit')]
+#### FORMAT
 
-Avoid if possible:
-- /html/body/…
-- //*[1]
-- //div[5]
-- long chains without attributes
+- `// tag-name [ @attribute-name = 'attribute-value' ]`
+- `// tag-name [contains ( @attribute-name, 'partial' )]`
+
+### Examples
+
+- //*[@data-testid='login-button']
+- //button[@id='submit' or @name='submit']
+- //button[text()='Sign in']
+- //button[contains(text(),'Sign')]
+- //button[contains(@class,'btn-primary')]
+- //div[contains(@class,'modal')]//button[1]
+- //label[text()='Email']/following-sibling::input
+- //tr[td='John']//button[contains(text(),'Edit')]
+
+
+### CSS
+
+#### Format
+
+| type     | syntax    | example                                            |
+|----------|-----------|----------------------------------------------------|
+| tag-name | only name | `a`, `button`, `input`, `select`, `div`            |
+| id       | #id       | `#search-input`, `#email-input`, `#password-field` |
+| class    | .class    | `.btn`, `.button-primary`, `.side-bar`             |
+
+
