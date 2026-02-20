@@ -44,14 +44,14 @@ driver.quit()                   # quit browser
 
 ### Examples
 
-- //*[@data-testid='login-button']
-- //button[@id='submit' or @name='submit']
-- //button[text()='Sign in']
-- //button[contains(text(),'Sign')]
-- //button[contains(@class,'btn-primary')]
-- //div[contains(@class,'modal')]//button[1]
-- //label[text()='Email']/following-sibling::input
-- //tr[td='John']//button[contains(text(),'Edit')]
+- `//*[@data-testid='login-button']`
+- `//button[@id='submit' or @name='submit']`
+- `//button[text()='Sign in']`
+- `//button[contains(text(),'Sign')]`
+- `//button[contains(@class,'btn-primary')]`
+- `//div[contains(@class,'modal')]//button[1]`
+- `//label[text()='Email']/following-sibling::input`
+- `//tr[td='John']//button[contains(text(),'Edit')]`
 
 
 ### CSS
@@ -63,5 +63,5 @@ driver.quit()                   # quit browser
 | tag-name | only name | `a`, `button`, `input`, `select`, `div`            |
 | id       | #id       | `#search-input`, `#email-input`, `#password-field` |
 | class    | .class    | `.btn`, `.button-primary`, `.side-bar`             |
-
+| attribute | 
 
