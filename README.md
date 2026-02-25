@@ -55,13 +55,18 @@ driver.quit()                   # quit browser
 
 
 ### CSS
+---
 
 #### Format
 
-| type     | syntax    | example                                            |
-|----------|-----------|----------------------------------------------------|
-| tag-name | only name | `a`, `button`, `input`, `select`, `div`            |
-| id       | #id       | `#search-input`, `#email-input`, `#password-field` |
-| class    | .class    | `.btn`, `.button-primary`, `.side-bar`             |
-| attribute | 
+| type                 | syntax                                | example                                            |
+|----------------------|---------------------------------------|----------------------------------------------------|
+| tag-name             | only name                             | `a`, `button`, `input`, `select`, `div`            |
+| id                   | #id                                   | `#search-input`, `#email-input`, `#password-field` |
+| class                | .class                                | `.btn`, `.button-primary`, `.side-bar`             |
+| tag name & attribute | tag-name[attribute='attribute value'] | `button[aria-label='Sign In']`                     |
+| id & attribute       | #id[attribute='attribute value']      | `#login[aria-label='Sign In']`                     |
+| class & attribute    | .class[attribute='attribute value']   | `.primary-btn[aria-label='Sign In']`               |
+
+### Examples
 
