@@ -3,6 +3,8 @@ from selenium.webdriver.common.by import By
 
 import time
 
+from pom_ecom.login_pom import LoginPOM
+
 def test_element_within_iframe():
 
     # Arrange
